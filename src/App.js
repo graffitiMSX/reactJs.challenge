@@ -26,7 +26,6 @@ function App() {
         lastAlbumIds.forEach(albumId => {
           filteredAlbums = [...filteredAlbums, lastAlbums.filter(album => album.albumId === albumId).sort(compareId).slice(0, 2)]
         })
-        console.log('setAlbuns', filteredAlbums)
         setAlbuns(filteredAlbums)
         setIsLoading(false)
       });

@@ -3,16 +3,25 @@
 }
 
 .photoBox1 {
+  float: left;
+  width: 50%;
+  border-style: solid;
   text-align: center;
   border-color: green
 }
 
 .photoBox2 {
+  float: left;
+  width: 50%;
+  border-style: solid;
   text-align: center;
   border-color: blue
 }
 
 .photoBox3 {
+  float: left;
+  width: 50%;
+  border-style: solid;
   text-align: center;
   border-color: purple
 }
@@ -21,6 +30,21 @@
   display: inline;
 }
 
-.row {
-  display: inline;
+.column {
+  flex: 30%;
 }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+

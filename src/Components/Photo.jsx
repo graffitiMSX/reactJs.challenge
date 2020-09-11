@@ -11,7 +11,7 @@ export default class Photo extends React.Component {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <img src={photo.thumbnailUrl} alt={photo.title} />
+                    <img src={photo.thumbnailUrl} alt={photo.title} className={index === 0 ? 'pictBox1' : index === 1 ? 'pictBox2' : 'pictBox3'}/>
                     <p>{photo.title}</p>
                 </a>
             </div>

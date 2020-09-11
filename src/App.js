@@ -33,7 +33,7 @@ function App() {
 
   return (
     <>
-      <h1>Image Gallery</h1>
+      <h1 className="App">Image Gallery</h1>
       {isLoading ? (<p> Loading... </p>) : (<Gallery albums={albums} />)}
     </>);
 }

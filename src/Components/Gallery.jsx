@@ -4,7 +4,7 @@ import Photo from './Photo';
 export default class Gallery extends React.Component {
   render() {
     return (
-      <div className='rows'>
+      <div className='container'>
         {this.props.albums.map((album, index) => {
           return (
             <div key={index} className='row'>
